@@ -1,0 +1,78 @@
+body {
+    font: 100% "Helvetica", sanf-serif;
+    background: url("images/grey_wash_wall.png");
+}
+
+input {
+    font: 100% "Helvetica", sanf-serif;
+}
+
+div.pasty {
+    position: relative;
+    width: 20em;
+    height: 10em;
+    background: #eee;
+    border: 1px solid #999;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px;
+    font-size:200%;
+}
+
+div.sources {
+    width: 50%;
+    min-width: 500px;
+    padding: 10px;
+    background: white;
+    border: 1px solid #999;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px;
+}
+
+cite {
+    font-size: 75%;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+
+a, a:visited {
+    color: darkblue;
+    text-decoration: none;
+}
+
+ul,li {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 10px 0;
+}
+
+li {
+    list-style-type: none;
+    margin: 5px 0;
+    padding: 0;
+}
+
+.box {
+    padding: 10px;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}
+
+.pre {
+    white-space: pre;
+}
+
+.nav {
+    font-size: 75%;
+}
+
+a.sources {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #fff;
+}

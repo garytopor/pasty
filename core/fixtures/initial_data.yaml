@@ -1,0 +1,17 @@
+- model: core.source
+  pk: 1
+  fields:
+    title: perashki.ru
+    url: http://www.perashki.ru/
+- model: core.source
+  pk: 2
+  fields:
+    title: pirozhki-ru.livejournal.com
+    url: http://pirozhki-ru.livejournal.com/
+    sync_url: http://pirozhki-ru.livejournal.com/data/rss
+- model: core.source
+  pk: 3
+  fields:
+    title: stishkipirozhki.ru
+    url: http://www.stishkipirozhki.ru
+    sync_url: http://www.stishkipirozhki.ru/?feed=rss2

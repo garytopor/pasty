@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Синхронизация с источниками</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'core/style.css' %}" />
+</head>
+<body class="box">
+    <div class="sources">
+        <a class="nav" href="/">&larr; На главную</a>
+        <form action="{% url 'sync' %}" method="post">
+            {% csrf_token %}
+            <h3>Источники</h3>
+            <ul>
+            {% for s in sources %}
+                <li>
+                    <input type="checkbox" name="source" id="source{{ forloop.counter }}" value="{{ s.id }}"/>
+                    <a href="{{ s.url }}">{{ s.title }}</a>
+                    <span> ({{ s.sync_date }})</span>
+                </li>
+            {% endfor %}
+            </ul>
+            <input type="submit" value="Синхронизировать"/>
+        </form>
+    </div>
+</body>
+</html>
