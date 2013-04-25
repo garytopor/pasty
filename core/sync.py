@@ -25,7 +25,7 @@ def sync_rss_source(source):
         source.save()
         print('successful sync for date %s' % sync_date)
     except Exception as e:
-        print('sync failed for date %s (%s)' % (sync_date, e))
+        print('sync failed: %s' % e)
 
 
 # TODO: how should I parse perashki.ru?!
